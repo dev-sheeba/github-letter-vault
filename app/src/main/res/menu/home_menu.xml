@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_letter"
+        android:title="Add"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/sort"
+        android:title="Sort"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+
+            <item
+                android:id="@+id/sort_by_all"
+                android:title="Sort by all" />
+
+            <item
+                android:id="@+id/sort_by_recent"
+                android:title="Sort by recent" />
+            <item
+                android:id="@+id/sort_by_future"
+                android:title="Sort by future" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/more"
+        android:title="More"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="ifRoom">
+        <menu>
+
+            <item
+                android:id="@+id/notification"
+                android:title="notification" />
+
+        </menu>
+
+    </item>
+
+
+</menu>
