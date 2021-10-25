@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Letter Vault</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="letter_notification_channel_id" translatable="false">letter_channel</string>
+    <string name="letter_notification_channel_name" translatable="true">Letter</string>
+    <string name="letter_notification_description" translatable="true">Notifications from Letter Vault</string>
+    <string name="deepLinkNotificationTitle">Deep Link</string>
+    <string name="addLetterInfo">Add more letter info!</string>
+    <string name="letter_ready">It is time, open your letter</string>
+    <string name="snooze">SNOOZE</string>
 </resources>

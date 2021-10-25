@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/letter_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hfad.lettervault.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment3_to_addLetterFragment2"
+            app:destination="@id/addLetterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailLetterFragment"
+            app:destination="@id/detailLetterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLetterFragment"
+        android:name="com.hfad.lettervault.AddLetterFragment"
+        android:label="fragment_add_letter"
+        tools:layout="@layout/fragment_add_letter" >
+        <action
+            android:id="@+id/action_addLetterFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_addLetterFragment_to_datePickerFragmentDialog"
+            app:destination="@id/datePickerFragmentDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailLetterFragment"
+        android:name="com.hfad.lettervault.DetailLetterFragment"
+        android:label="fragment_detail_letter"
+        tools:layout="@layout/fragment_detail_letter" />
+    <fragment
+        android:id="@+id/datePickerFragmentDialog"
+        android:name="com.hfad.lettervault.dialog.DatePickerFragmentDialog"
+        android:label="DatePickerFragmentDialog" />
+</navigation>
